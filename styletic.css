@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgb(5, 27, 54);
+    font-family: 'Finger Paint',cursive;
+    color: orange;
+}
+.Gamecontainer{
+    width: 600px;
+    height: auto;
+    margin: 60px auto;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.Gamecontainer h1{
+    text-align: center;
+    font-size: 35px;
+    margin: 30px auto;
+    color: rgb(255, 166, 0);
+    font-size: 54px;
+
+}
+#statusText{
+    font-size: 35px;
+    text-align: center;
+    color: rgb(255, 166, 0);
+   
+    margin: 50px auto;
+}
+#restartBtn{
+    width: 100px;
+    border-radius: 8px;
+    border: none;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgb(255, 166, 0); 
+    color: rgb(5, 27, 54);
+    margin: 50px auto;
+    align-items: center;
+
+}
+#cellContainer{
+    width: 450px;
+   display: flex;
+   align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top:40px;
+}
+.cell{
+    width: 150px;
+    height: 150px;
+  
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 120px;
+    border-right: 2px solid orange;
+    border-bottom: 2px solid orange;
+   }
+
+.cell:nth-child(3n){
+    border-right: none;
+}
+.cell:nth-child(6)~.cell{
+    border-bottom: none;
+}
